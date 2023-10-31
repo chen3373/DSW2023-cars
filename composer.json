@@ -1,0 +1,16 @@
+{
+    "name": "chen/cars",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Chen\\Cars\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Minghai Chen",
+            "email": "chenminghai79@gmail.com"
+        }
+    ],
+    "require": {}
+}
