@@ -1,6 +1,9 @@
 <?php
-require '../src/models/Car.php';
-require '../src/controllers/CarController.php';
+// require '../src/models/Car.php';
+// require '../src/controllers/CarController.php';
+require '../vendor/autoload.php';
+
+use Chen\Cars\Controllers\CarController;
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -17,8 +20,18 @@ require '../src/controllers/CarController.php';
   <?php
   $controller = new CarController();
   if (isset($_GET['id'])) {
+      $id = $_GET['id'];
+      if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+      
+      if ($action == 'delete') {
+        $controller->delete($id);
+      }
+    } else{
     $controller->show($_GET['id']);
+    }
   } else {
+    $controller->create();
     $controller->list();
   }
   ?>
