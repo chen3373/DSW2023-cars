@@ -1,3 +1,7 @@
+<p>
+    <a href="index.php?action=create">Crear nuevo coche</a>
+</p>
+<h1>Listado de coches</h1>
 <table border="1">
   <thead>
     <tr>
@@ -10,7 +14,7 @@
     <?php foreach ($listCars as $car) { ?>
       <tr>
         <td>
-          <a href="index.php?id=<?= $car->id ?>"><?= $car->id ?></a>
+          <a href="index.php?action=show&id=<?= $car->id ?>"><?= $car->id ?></a>
         </td>
         <td><?= $car->make ?></td>
         <td><?= $car->model ?></td>

@@ -705,5 +705,26 @@
         "model": "Picanto",
         "year": 2010,
         "color": "black"
+    },
+    {
+        "id": "12324QWER",
+        "make": "Fiat",
+        "model": "Picanto",
+        "year": 2010,
+        "color": "#66FF99"
+    },
+    {
+        "id": "12324QWER",
+        "make": "Fiat",
+        "model": "Picanto",
+        "year": 2010,
+        "color": "#66FF99"
+    },
+    {
+        "id": "1597534682s",
+        "make": "Audi",
+        "model": "RS7",
+        "year": "2022",
+        "color": "#4500e6"
     }
 ]
