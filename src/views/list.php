@@ -18,7 +18,7 @@
         </td>
         <td><?= $car->make ?></td>
         <td><?= $car->model ?></td>
-        <td style="background-color: <?= $car->color ?>;"><?= $car->model ?></td>
+        <td style="background-color: <?= $car->color ?>;"><?= $car->color ?></td>
         <td>
           <a href="index.php?id=<?=$car->id?>&action=delete">Eliminar</a>
         </td>
